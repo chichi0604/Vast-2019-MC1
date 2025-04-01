@@ -55,6 +55,3 @@ Your visualisation app(s) must be implemented in **JavaScript**. The following l
 
 **Important:** Do not use Observable Notebook as covered in COMP3021.
 
----
-
-Use this document as a blueprint for developing your visual analytics applications. Your solution should provide clear, interactive visualisations that help emergency planners understand the spatial and temporal dimensions of the earthquake damage, the reliability of citizen reports, and the overall conditions across the city.
