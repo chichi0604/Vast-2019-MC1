@@ -1,14 +1,60 @@
-Project Details and Resources
-Data
+# VAST Challenge 2019 Mini Challenge 1
 
-St. Himark has been hit by an earthquake, leaving officials scrambling to determine the extent of the damage and dispatch limited resources to the areas in most need. They quickly receive seismic readings and use those for an initial deployment but realise they need more information to make sure they have a realistic understanding of the true conditions throughout the city.
+## Overview
 
-In a prescient move of community engagement, the city had released a new damage reporting mobile application shortly before the earthquake. This app allows citizens to provide more timely information to the city to help them understand damage and prioritise their response. In this mini-challenge, use app responses in conjunction with shake maps of the earthquake strength to identify areas of concern and advise emergency planners. Note: the shake maps are from April 6 and April 8 respectively.
+St. Himark has been hit by an earthquake, leaving officials scrambling to determine the extent of the damage and to dispatch limited resources to the areas most in need. Initial seismic readings have been used for the first deployment; however, additional information is necessary to gain a realistic understanding of the true conditions throughout the city.
 
-With emergency services stretched thin, officials are relying on citizens to provide them with much needed information about the effects of the quake to help focus recovery efforts.  By combining seismic readings of the quake, responses from the app, and background knowledge of the city, help the city triage their efforts for rescue and recovery.
+In a proactive step toward community engagement, the city released a new damage reporting mobile application shortly before the earthquake. This app enables citizens to provide timely information to help officials assess damage and prioritize their response. **Note:** Shake maps used in this challenge are from April 6 and April 8 respectively.
 
-Analysis Tasks
+With emergency services stretched thin, officials now rely on citizen reports to gather crucial information about the quake’s effects and to focus recovery efforts effectively. By combining seismic readings, app responses, and background knowledge of the city, your task is to help triage rescue and recovery operations.
 
-Emergency responders will base their initial response on the earthquake shake map. Use visual analytics to determine how their response should change based on damage reports from citizens on the ground. How would you prioritize neighborhoods for response? Which parts of the city are hardest hit?
-Use visual analytics to show uncertainty in the data. Compare the reliability of neighborhood reports. Which neighborhoods are providing reliable reports? Provide a rationale for your response.
-How do conditions change over time? How does uncertainty in change over time? Describe the key changes you see. 
+## Analysis Tasks
+
+1. **Prioritizing Response Based on Shake Maps and Citizen Reports**  
+   - Use visual analytics to determine how emergency response strategies should change in light of damage reports from citizens.
+   - Decide how to prioritize neighborhoods for response.
+   - Identify which parts of the city are hardest hit.
+
+2. **Visualising and Assessing Data Uncertainty**  
+   - Use visual analytics to illustrate uncertainty in the available data.
+   - Compare the reliability of neighborhood reports.
+   - Determine which neighborhoods are providing reliable reports and justify your rationale.
+
+3. **Tracking Temporal Changes**  
+   - Analyze how conditions change over time.
+   - Examine how the uncertainty associated with these conditions evolves.
+   - Describe the key changes you observe over time.
+
+## Visualisation App Requirements
+
+- **Objective:** Develop one or more interactive visualisation applications that answer the analysis tasks outlined above.
+- **Design Options:**  
+  - You may create a separate app for each question, or a single app that addresses all three tasks through one or more linked visualisations.
+- **Restrictions:**  
+  - **Do not reuse** the design or code from the example apps `example1` and `example2`.
+
+## Implementation Guidelines
+
+Your visualisation app(s) must be implemented in **JavaScript**. The following libraries are available for use:
+
+- **D3.js:**  
+  A low-level visualisation library ideal for creating custom charts.  
+  *Tutorials:* Michael Oppermann, Scott Muarry (code examples available online).
+
+- **Echarts:**  
+  An open-source library that provides a wide range of pre-made chart types.
+
+- **Chart.js:**  
+  Another open-source library offering many pre-made charts.
+
+- **Vega-Lite.js:**  
+  A high-level visualisation library that allows for concise code to build interactive visualisations.
+
+- **Observable Plot:**  
+  A JavaScript visualisation library that includes many common visualisations available in Observable, and it can be integrated with the Observable Framework for dashboard development.
+
+**Important:** Do not use Observable Notebook as covered in COMP3021.
+
+---
+
+Use this document as a blueprint for developing your visual analytics applications. Your solution should provide clear, interactive visualisations that help emergency planners understand the spatial and temporal dimensions of the earthquake damage, the reliability of citizen reports, and the overall conditions across the city.
