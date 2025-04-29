@@ -33,7 +33,7 @@
 
     // Load original CSV data (for non-"severity" metric)
     function loadOriginalData() {
-        return d3.csv("data/vast2019mc1/MC1/variance1.csv")
+        return d3.csv("./data/vast2019mc1/MC1/variance1.csv")
             .then((data) => {
                 data.forEach((d) => {
                     if (d.time_interval && d.time_interval.trim().length > 0) {
@@ -60,7 +60,7 @@
 
     // Load "severity" data (for "severity" metric only)
     function loadSeverityData() {
-        return d3.csv("data/vast2019mc1/MC1/severity1.csv")
+        return d3.csv("./data/vast2019mc1/MC1/severity1.csv")
             .then((data) => {
                 data.forEach((d) => {
                     if (d.time_interval && d.time_interval.trim().length > 0) {

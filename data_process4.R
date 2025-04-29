@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-data <- read.csv("G:/data_visualisation_project/data/vast2019mc1/MC1/mc1-reports-data.csv",
+data <- read.csv("./data_visualisation_project/data/vast2019mc1/MC1/mc1-reports-data.csv",
                  stringsAsFactors = FALSE)
 
 data$time <- as.POSIXct(data$time, format = "%Y/%m/%d %H:%M")
@@ -41,5 +41,5 @@ result <- result %>%
 result$time_interval <- format(result$time_interval, "%Y/%m/%d %H:%M")
 result$time_interval <- gsub("/0", "/", result$time_interval)
 
-write.csv(result, "G:/data_visualisation_project/data/vast2019mc1/MC1/variance1.csv",
+write.csv(result, "./data_visualisation_project/data/vast2019mc1/MC1/variance1.csv",
           row.names = FALSE)

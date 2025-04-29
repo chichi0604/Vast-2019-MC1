@@ -32,7 +32,7 @@
 
     // Data loading function: original CSV data
     function loadOriginalData() {
-        return d3.csv("data/vast2019mc1/MC1/mc1-reports-data.csv")
+        return d3.csv("./data/vast2019mc1/MC1/mc1-reports-data.csv")
             .then((data) => {
                 data.forEach(row => {
                     Object.keys(row).forEach(key => {
@@ -55,7 +55,7 @@
 
     // Data loading function: CSV data for "severity"
     function loadSeverityData() {
-        return d3.csv("data/vast2019mc1/MC1/severity2.csv")
+        return d3.csv("./data/vast2019mc1/MC1/severity2.csv")
             .then((data) => {
                 data.forEach((d) => {
                     d.dateObj = new Date(d.time);

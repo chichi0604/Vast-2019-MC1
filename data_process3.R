@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 
-data <- read.csv("G:/data_visualisation_project/data/vast2019mc1/MC1/severity2.csv",
+data <- read.csv("./data_visualisation_project/data/vast2019mc1/MC1/severity2.csv",
                  stringsAsFactors = FALSE)
 
 data$time <- as.POSIXct(data$time, format = "%Y/%m/%d %H:%M")

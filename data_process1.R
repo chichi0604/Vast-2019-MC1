@@ -3,7 +3,7 @@ if (!require("dplyr")) {
   library(dplyr)
 }
 
-data <- read.csv("G:/data_visualisation_project/data/vast2019mc1/MC1/mc1-reports-data.csv", stringsAsFactors = FALSE)
+data <- read.csv("./data_visualisation_project/data/vast2019mc1/MC1/mc1-reports-data.csv", stringsAsFactors = FALSE)
 
 if (!"date" %in% names(data)) {
   data$date <- as.Date(substr(data$time, 1, 10))
@@ -54,5 +54,5 @@ data$severity <- ifelse(
 data <- data %>%
   filter(!(date %in% as.Date(c("2020-04-05", "2020-04-11"))))
 
-output_file <- "G:/data_visualisation_project/data/vast2019mc1/MC1/severity2.csv"
+output_file <- "./data_visualisation_project/data/vast2019mc1/MC1/severity2.csv"
 write.csv(data, file = output_file, row.names = FALSE)
